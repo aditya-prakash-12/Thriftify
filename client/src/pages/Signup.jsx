@@ -76,7 +76,7 @@ function Signup() {
     }
 
     try {
-      const response = await fetch("http://localhost:4000/api/user/register", {
+      const response = await fetch("https://thriftify-j4ll.onrender.com/api/user/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
