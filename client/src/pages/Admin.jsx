@@ -26,19 +26,19 @@ function Admin() {
   const fetchData = async () => {
     try {
       // Fetch all users
-      const usersRes = await fetch('http://localhost:4000/api/user/all', {
+      const usersRes = await fetch('https://thriftify-j4ll.onrender.com/api/user/all', {
         headers: { 'Authorization': `Bearer ${localStorage.getItem('token')}` }
       });
       const usersData = await usersRes.json();
       setUsers(usersData);
 
       // Fetch all products
-      const productsRes = await fetch('http://localhost:4000/api/products');
+      const productsRes = await fetch('https://thriftify-j4ll.onrender.com/api/products');
       const productsData = await productsRes.json();
       setProducts(productsData);
 
       // Fetch all orders
-      const ordersRes = await fetch('http://localhost:4000/api/orders/all', {
+      const ordersRes = await fetch('https://thriftify-j4ll.onrender.com/api/orders/all', {
         headers: { 'Authorization': `Bearer ${localStorage.getItem('token')}` }
       });
       const ordersData = await ordersRes.json();
@@ -50,7 +50,7 @@ function Admin() {
 
   const fetchUserDetails = async (userId) => {
     try {
-      const res = await fetch(`http://localhost:4000/api/user/details/${userId}`, {
+      const res = await fetch(`https://thriftify-j4ll.onrender.com/api/user/details/${userId}`, {
         headers: { 'Authorization': `Bearer ${localStorage.getItem('token')}` }
       });
       const data = await res.json();
@@ -64,7 +64,7 @@ function Admin() {
   const deleteUser = async (userId) => {
     if (window.confirm('Are you sure you want to delete this user?')) {
       try {
-        await fetch(`http://localhost:4000/api/user/${userId}`, {
+        await fetch(`https://thriftify-j4ll.onrender.com/api/user/${userId}`, {
           method: 'DELETE',
           headers: { 'Authorization': `Bearer ${localStorage.getItem('token')}` }
         });
@@ -81,7 +81,7 @@ function Admin() {
   const updateUser = async (userId) => {
     if (!editingUser) return;
     try {
-      const res = await fetch(`http://localhost:4000/api/user/${userId}`, {
+      const res = await fetch(`https://thriftify-j4ll.onrender.com/api/user/${userId}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -105,7 +105,7 @@ function Admin() {
   const deleteProduct = async (productId) => {
     if (window.confirm('Are you sure you want to delete this product?')) {
       try {
-        await fetch(`http://localhost:4000/api/products/${productId}`, {
+        await fetch(`https://thriftify-j4ll.onrender.com/api/products/${productId}`, {
           method: 'DELETE',
           headers: { 'Authorization': `Bearer ${localStorage.getItem('token')}` }
         });
@@ -118,7 +118,7 @@ function Admin() {
 
   const updateOrderStatus = async (orderId, status) => {
     try {
-      await fetch(`http://localhost:4000/api/orders/${orderId}/admin-status`, {
+      await fetch(`https://thriftify-j4ll.onrender.com/api/orders/${orderId}/admin-status`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
