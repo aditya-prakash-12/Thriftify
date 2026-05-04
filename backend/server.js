@@ -12,7 +12,7 @@ connectDB().catch(err => console.error("Failed to connect:", err.message));
 const app = express();
 // Middleware
 app.use(cors({
-  origin: "https://thriftify-ebon.vercel.app/",
+  origin: "https://thriftify-1.onrender.com",
   methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
   credentials: true
 }));
