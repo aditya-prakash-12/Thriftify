@@ -14,7 +14,7 @@ function ArrivedProduct() {
 
   React.useEffect(() => {
     // fetch most recent items from backend (limit to 4 for the carousel)
-    fetch("http://localhost:4000/api/products?limit=4")
+    fetch("https://thriftify-j4ll.onrender.com/api/products?limit=4")
       .then((res) => res.json())
       .then((data) => setProducts(data))
       .catch((err) => console.error(err));
