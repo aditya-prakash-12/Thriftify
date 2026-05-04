@@ -81,7 +81,7 @@ function Sell() {
 
       // Now, create product with the image URL
       const payload = { ...form, image: imageUrl };
-      const res = await fetch("hhttps://thriftify-j4ll.onrender.com/api/products", {
+      const res = await fetch("https://thriftify-j4ll.onrender.com/api/products", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
