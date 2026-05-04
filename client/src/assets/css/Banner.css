@@ -1,0 +1,145 @@
+.banner-section {
+  padding: 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 25px;
+}
+
+.banner-large {
+  grid-row: span 2;
+  position: relative;
+  background: #cfe2f3;
+  border-radius: 20px;
+  padding: 60px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.banner-small {
+  position: relative;
+  border-radius: 20px;
+  padding: 40px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.banner-small.green {
+  background: #d4edda;
+}
+
+.banner-small.pink {
+  background: #f8d7da;
+}
+
+.banner-content {
+  max-width: 60%;
+  z-index: 2;
+
+  & a{
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.banner-content h2 {
+  font-size: 40px;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.banner-content h4 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+.tag {
+  color: #ff9800;
+  font-weight: 600;
+}
+
+.sale {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.primary-btn {
+  padding: 12px 25px;
+  border: 1px solid #000;
+  background: transparent;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.primary-btn:hover {
+  background: black;
+  color: white;
+}
+
+.banner-img-large {
+  position: absolute;
+  right: -50px;
+  bottom: 0;
+  max-height: 70%;
+  filter: drop-shadow(0 20px 30px rgba(0,0,0,0.2));
+  /* push a bit further right and zoom in */
+  transform: scale(1.4) translateX(20px);
+  transform-origin: bottom right;
+}
+
+.banner-img-small {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  max-height: 70%;
+  /* move right and enlarge like the large image */
+  transform: scale(1.4) translateX(20px);
+  transform-origin: bottom right;
+}
+
+.banner-large:hover,
+.banner-small:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .banner-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .banner-large {
+    grid-row: auto;
+  }
+
+  .banner-content {
+    max-width: 100%;
+  }
+
+  .banner-img-large,
+  .banner-img-small {
+    position: relative;
+    right: 0;
+    margin-top: 20px;
+    max-height: 200px;
+    /* reset transform on small screens to avoid overflow */
+    transform: none;
+  }
+}
+
+
+
+
+

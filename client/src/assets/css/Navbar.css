@@ -1,0 +1,259 @@
+/* ================= GLOBAL ================= */
+:root {
+  --primary: #6367FF;
+  --secondary: #8494FF;
+  --soft: #C9BEFF;
+  --pink-soft: #FFDBFD;
+  --white: #ffffff;
+}
+
+.navbar-wrapper {
+  background: var(--pink-soft);
+  font-family: "Poppins", sans-serif;
+}
+
+/* ================= TOP HEADER ================= */
+.top-header {
+  background: var(--white);
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.logo img {
+  height: 67.5px;
+  width: auto;
+}
+
+/* Search */
+.search-container {
+  display: flex;
+  background: var(--soft);
+  border-radius: 30px;
+  overflow: hidden;
+  width: 500px;
+}
+
+.search-container select,
+.search-container input {
+  border: none;
+  padding: 10px;
+  background: transparent;
+  outline: none;
+}
+
+.search-container input {
+  flex: 1;
+}
+
+.search-container button {
+  border: none;
+  background: var(--primary);
+  color: white;
+  padding: 10px 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-container button:hover {
+  background: var(--secondary);
+}
+
+/* Support */
+.support-label {
+  font-size: 13px;
+  color: gray;
+}
+
+.support-number {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+/* ================= PROFILE ================= */
+.profile-wrapper {
+  position: relative;
+}
+
+.profile-btn {
+  background: var(--soft);
+  border: none;
+  border-radius: 50%;
+  padding: 10px 14px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.profile-btn:hover {
+  background: var(--secondary);
+  color: white;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 55px;
+  right: 0;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+  padding: 10px 0;
+  z-index: 9999;
+}
+
+.profile-dropdown a {
+  padding: 12px 18px;
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.profile-dropdown a:hover {
+  background: var(--soft);
+}
+
+/* ================= BOTTOM HEADER ================= */
+.bottom-header {
+  background: var(--primary);
+  padding: 15px 0;
+}
+
+.nav-tabs {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-tabs li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 20px;
+  transition: 0.3s ease;
+}
+
+.nav-tabs li a:hover {
+  background: var(--soft);
+  color: var(--primary);
+}
+
+/* ================= SELL BUTTON ================= */
+.sell-btn {
+  background: white;
+  color: var(--primary);
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  margin-right: 15px;
+  transition: 0.3s;
+}
+
+.sell-btn:hover {
+  background: var(--soft);
+}
+
+/* ================= CART BUTTON ================= */
+.cart-btn {
+  background: var(--soft);
+  color: var(--primary);
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+  transition: 0.3s;
+}
+
+.cart-btn:hover {
+  background: white;
+}
+
+.cart-badge {
+  background: #ff3d3d;
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 3px 7px;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 992px) {
+  .search-container {
+    display: none;
+  }
+
+  .nav-tabs {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .support-box {
+    display: none;
+  }
+}
+
+
+
+
+
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #6367FF;
+  border: none;
+  color: white;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 10;
+  transition: 0.3s ease;
+}
+
+.nav-btn:hover {
+  background: #8494FF;
+}
+
+.custom-prev {
+  left: -10px;
+}
+
+.custom-next {
+  right: -10px;
+}
+
+/* Remove default swiper arrows */
+.swiper-button-next,
+.swiper-button-prev {
+  display: none;
+}
+
+
+.login-btn {
+  background: red;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  margin-right: 15px;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background: rgba(255, 0, 0, 0.643);
+}

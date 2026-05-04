@@ -1,0 +1,12 @@
+.login-box .login-box-2{
+    border: 1px solid #7dee81;
+    box-shadow: 0 0 10px #FFDBFD;
+}
+
+.submit_button {
+    border-radius: 25px;
+}
+
+form{
+    margin-bottom: 10px;
+}
