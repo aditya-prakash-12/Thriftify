@@ -22,7 +22,7 @@ function Login() {
     }
 
     try {
-      const res = await fetch("http://localhost:4000/api/user/login", {
+      const res = await fetch("https://thriftify-j4ll.onrender.com/api/user/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username, password }),
