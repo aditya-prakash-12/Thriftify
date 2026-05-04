@@ -20,7 +20,7 @@ export function AuthProvider({ children }) {
       if (token && storedUser) {
         try {
           // Verify token with backend
-          const response = await fetch('http://localhost:4000/api/user/verify', {
+          const response = await fetch('https://thriftify-j4ll.onrender.com/api/user/verify', {
             method: 'GET',
             headers: {
               'Authorization': `Bearer ${token}`,
