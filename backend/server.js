@@ -12,7 +12,7 @@ connectDB().catch(err => console.error("Failed to connect:", err.message));
 const app = express();
 // Middleware
 app.use(cors({
-  origin: ["thriftify-git-main-aditya-prakash-12s-projects.vercel.app", "http://localhost:5174", "http://localhost:5175", "http://localhost:5176", "http://localhost:5177"], // frontend URLs
+  origin: ["https://thriftify-git-main-aditya-prakash-12s-projects.vercel.app", "http://localhost:5174", "http://localhost:5175", "http://localhost:5176", "http://localhost:5177"], // frontend URLs
   methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
   credentials: true // if you are sending cookies
 }));
