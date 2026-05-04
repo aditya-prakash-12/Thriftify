@@ -11,7 +11,11 @@ connectDB().catch(err => console.error("Failed to connect:", err.message));
 
 const app = express();
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: "https://thriftify-git-main-aditya-prakash-12s-projects.vercel.app",
+  methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
+  credentials: true
+}));
 
 // allow larger payloads for images encoded as base64
 app.use(express.json({ limit: "10mb" }));
