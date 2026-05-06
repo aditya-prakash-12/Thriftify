@@ -72,6 +72,18 @@ function Checkout() {
     const requiredFields = ['name', 'phone', 'address', 'city', 'state', 'pincode'];
     const missingFields = requiredFields.filter(field => !shippingAddress[field].trim());
 
+    // Phone validation (10 digits)
+if (!/^[0-9]{10}$/.test(shippingAddress.phone)) {
+  alert('Phone number must be exactly 10 digits');
+  return;
+}
+
+// Pincode validation (6 digits)
+if (!/^[0-9]{6}$/.test(shippingAddress.pincode)) {
+  alert('Pincode must be exactly 6 digits');
+  return;
+}
+
     if (missingFields.length > 0) {
       alert(`Please fill in all required fields: ${missingFields.join(', ')}`);
       return;
@@ -179,6 +191,8 @@ function Checkout() {
                     name="phone"
                     value={shippingAddress.phone}
                     onChange={handleAddressChange}
+                    pattern="[0-9]{10}"
+                    maxLength="10"
                     required
                   />
                 </div>
@@ -227,6 +241,8 @@ function Checkout() {
                     name="pincode"
                     value={shippingAddress.pincode}
                     onChange={handleAddressChange}
+                    pattern="[0-9]{6}"
+                    maxLength="6"
                     required
                   />
                 </div>
