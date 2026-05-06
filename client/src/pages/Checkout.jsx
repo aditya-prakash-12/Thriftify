@@ -32,7 +32,7 @@ function Checkout() {
 
   const fetchSellerInfo = async (sellerId) => {
     try {
-      const response = await fetch(`http://localhost:4000/api/user/${sellerId}`);
+      const response = await fetch(`https://thriftify-j4ll.onrender.com/api/user/${sellerId}`);
       if (response.ok) {
         const data = await response.json();
         setSellerInfo(data);
@@ -94,7 +94,7 @@ function Checkout() {
         orderNotes,
       };
 
-      const response = await fetch('http://localhost:4000/api/orders', {
+      const response = await fetch('https://thriftify-j4ll.onrender.com/api/orders', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

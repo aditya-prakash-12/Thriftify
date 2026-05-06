@@ -14,7 +14,7 @@ function OrderHistory() {
       return;
     }
 
-    fetch(`http://localhost:4000/api/orders/user/${user._id}?type=buyer`)
+    fetch(`https://thriftify-j4ll.onrender.com/api/orders/user/${user._id}?type=buyer`)
       .then((res) => res.json())
       .then((data) => {
         setOrders(data);

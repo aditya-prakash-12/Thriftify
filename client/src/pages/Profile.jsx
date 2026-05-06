@@ -50,7 +50,7 @@ function Profile() {
     setMessage('');
 
     try {
-      const response = await fetch(`http://localhost:4000/api/user/profile/${user._id}`, {
+      const response = await fetch(`https://thriftify-j4ll.onrender.com/api/user/profile/${user._id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

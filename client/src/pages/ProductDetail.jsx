@@ -20,7 +20,7 @@ function ProductDetail() {
   useEffect(() => {
     const fetchProductAndReviews = async () => {
       try {
-        const res = await fetch(`http://localhost:4000/api/products/${id}`);
+        const res = await fetch(`https://thriftify-j4ll.onrender.com/api/products/${id}`);
         const found = await res.json();
         setProduct(found);
 

@@ -10,7 +10,7 @@ function Products() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("http://localhost:4000/api/products")
+    fetch("https://thriftify-j4ll.onrender.com/api/products")
       .then(res => res.json())
       .then(data => {
         setProducts(Array.isArray(data) ? data : []);

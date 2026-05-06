@@ -22,7 +22,7 @@ function MyProducts() {
       return;
     }
 
-    fetch("http://localhost:4000/api/products")
+    fetch("https://thriftify-j4ll.onrender.com/api/products")
       .then((res) => res.json())
       .then((data) => {
         // Filter products by current user

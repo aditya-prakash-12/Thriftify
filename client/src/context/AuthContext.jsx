@@ -20,7 +20,7 @@ export function AuthProvider({ children }) {
       if (token && storedUser) {
         try {
           // Verify token with backend
-          const response = await fetch('http://localhost:4000/api/user/verify', {
+          const response = await fetch('https://thriftify-j4ll.onrender.com/api/user/verify', {
             method: 'GET',
             headers: {
               'Authorization': `Bearer ${token}`,
@@ -66,7 +66,7 @@ export function AuthProvider({ children }) {
   const fetchMessages = async () => {
     if (!user) return;
     try {
-      const response = await fetch(`http://localhost:4000/api/messages/user/${user._id}`);
+      const response = await fetch(`https://thriftify-j4ll.onrender.com/api/messages/user/${user._id}`);
       const data = await response.json();
       setMessages(data);
     } catch (error) {
@@ -127,7 +127,7 @@ export function AuthProvider({ children }) {
     if (!user || !receiverId) return;
 
     try {
-      const response = await fetch("http://localhost:4000/api/messages", {
+      const response = await fetch("https://thriftify-j4ll.onrender.com/api/messages", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -153,7 +153,7 @@ export function AuthProvider({ children }) {
     if (!user) return;
 
     try {
-      const response = await fetch("http://localhost:4000/api/reviews", {
+      const response = await fetch("https://thriftify-j4ll.onrender.com/api/reviews", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -184,7 +184,7 @@ export function AuthProvider({ children }) {
     }
 
     try {
-      const response = await fetch(`http://localhost:4000/api/reviews/product/${productId}`);
+      const response = await fetch(`https://thriftify-j4ll.onrender.com/api/reviews/product/${productId}`);
       const data = await response.json();
       setReviews((prev) => ({
         ...prev,
@@ -199,7 +199,7 @@ export function AuthProvider({ children }) {
 
   const getAverageRating = async (productId) => {
     try {
-      const response = await fetch(`http://localhost:4000/api/reviews/product/${productId}/average`);
+      const response = await fetch(`https://thriftify-j4ll.onrender.com/api/reviews/product/${productId}/average`);
       const data = await response.json();
       return data.averageRating || 0;
     } catch (error) {

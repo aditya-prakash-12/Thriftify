@@ -25,7 +25,7 @@ function EditProduct() {
     // Fetch existing product data
     const fetchProduct = async () => {
       try {
-        const res = await fetch(`http://localhost:4000/api/products`);
+        const res = await fetch(`https://thriftify-j4ll.onrender.com/api/products`);
         const data = await res.json();
         const product = data.find(p => p._id === id);
 
@@ -91,7 +91,7 @@ function EditProduct() {
       // Upload new image if selected
       if (selectedFile) {
         // Get signature from backend
-        const sigRes = await fetch("http://localhost:4000/api/products/upload-signature");
+        const sigRes = await fetch("https://thriftify-j4ll.onrender.com/api/products/upload-signature");
         const sigData = await sigRes.json();
 
         // Prepare form data for Cloudinary upload
@@ -117,7 +117,7 @@ function EditProduct() {
 
       // Update product
       const payload = { ...form, image: imageUrl };
-      const res = await fetch(`http://localhost:4000/api/products/${id}`, {
+      const res = await fetch(`https://thriftify-j4ll.onrender.com/api/products/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

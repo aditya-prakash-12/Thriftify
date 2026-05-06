@@ -56,7 +56,7 @@ function Sell() {
       }
 
       // Get signature from backend
-      const sigRes = await fetch("http://localhost:4000/api/products/upload-signature");
+      const sigRes = await fetch("https://thriftify-j4ll.onrender.com/api/products/upload-signature");
       const sigData = await sigRes.json();
 
       // Prepare form data for Cloudinary upload
@@ -81,7 +81,7 @@ function Sell() {
 
       // Now, create product with the image URL
       const payload = { ...form, image: imageUrl };
-      const res = await fetch("http://localhost:4000/api/products", {
+      const res = await fetch("https://thriftify-j4ll.onrender.com/api/products", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

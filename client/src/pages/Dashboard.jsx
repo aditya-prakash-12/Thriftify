@@ -32,7 +32,7 @@ function Dashboard() {
     }
 
     // Fetch user's products (for seller functionality)
-    fetch("http://localhost:4000/api/products")
+    fetch("https://thriftify-j4ll.onrender.com/api/products")
       .then((res) => res.json())
       .then((data) => {
         // Filter products by current user
@@ -46,7 +46,7 @@ function Dashboard() {
       });
 
     // Fetch orders where user is seller
-    fetch(`http://localhost:4000/api/orders/user/${user._id}?type=seller`)
+    fetch(`https://thriftify-j4ll.onrender.com/api/orders/user/${user._id}?type=seller`)
       .then((res) => res.json())
       .then((data) => {
         setOrders(data);
@@ -81,7 +81,7 @@ function Dashboard() {
 
   const updateOrderStatus = async (orderId, newStatus) => {
     try {
-      const response = await fetch(`http://localhost:4000/api/orders/${orderId}/status`, {
+      const response = await fetch(`https://thriftify-j4ll.onrender.com/api/orders/${orderId}/status`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
