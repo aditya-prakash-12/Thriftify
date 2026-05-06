@@ -18,7 +18,7 @@ function Offers() {
                       <div className="categories text-primary fs-5 fw-bold">
                         Upto 25% Off
                       </div>
-                      <h3 className="banner-title">Men Clothes</h3>
+                      <h3 className="banner-title">Men</h3>
                       <p>Very stylish and new trending mens collection.</p>
                       <Link to="/products" className="btn btn-dark text-uppercase">
                         Shop Now
@@ -48,7 +48,7 @@ function Offers() {
                       <div className="categories text-primary fs-5 fw-bold">
                         Upto 25% Off
                       </div>
-                      <h3 className="banner-title">Women Clothes</h3>
+                      <h3 className="banner-title">Women </h3>
                       <p>Get trending and stylish women clothes at your doorsteps.</p>
                       <Link to="/products" className="btn btn-dark text-uppercase">
                         Shop Now
@@ -58,7 +58,7 @@ function Offers() {
 
                   <div className="col-5 text-end">
                     <img
-                      src="/images/ad-image-2.png"
+                      src="/images/product-thumb-1.png"
                       alt="Women clothes"
                       className="offer-img"
                     />
