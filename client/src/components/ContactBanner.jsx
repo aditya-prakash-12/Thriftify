@@ -16,8 +16,7 @@ function ContactBanner() {
                     first purchase
                   </h2>
                   <p className="mt-3">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Dictumst amet, metus, sit massa posuere maecenas.
+                    The ultimate solution of fashion at an affordable price. Get pre-owned clothes in a good condition on your doorsteps.
                   </p>
                 </div>
 

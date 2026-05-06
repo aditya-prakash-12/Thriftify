@@ -15,11 +15,9 @@ function AppBanner() {
 
               {/* TEXT CONTENT */}
               <div className="col-md-8 text-content">
-                <h2 className="mb-4">Shop faster with Foodmart App</h2>
+                <h2 className="mb-4">Shop smarter with THRIFTIFY </h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Sagittis sed ptibus liberolectus nonet psryroin. Amet sed
-                  lorem posuere sit iaculis amet.
+                  The ultimate solution of your fashion. Get pre-owned clothes at a good condition to use from authorised seller at your doorsteps.
                 </p>
 
                 <div className="d-flex gap-3 flex-wrap mt-4">
