@@ -50,7 +50,7 @@ function Offers() {
                       </div>
                       <h3 className="banner-title">Women Clothes</h3>
                       <p>Get trending and stylish women clothes at your doorsteps.</p>
-                      <Link tp="/products" className="btn btn-dark text-uppercase">
+                      <Link to="/products" className="btn btn-dark text-uppercase">
                         Shop Now
                       </Link>
                     </div>

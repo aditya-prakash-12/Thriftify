@@ -1,5 +1,6 @@
 import React from "react";
 import "../assets/css/Banner.css"; // adjust path if needed
+import { Link } from "react-router-dom";
 
 function Banner() {
   return (
@@ -19,7 +20,7 @@ function Banner() {
             <p>
              Discover unique style with our curated collection of vintage and designer clothing. Shop sustainably and express your individuality with timeless pieces that tell a story.
             </p>
-            <button className="primary-btn">Shop Now</button>
+            <Link to="/products"> <button className="primary-btn">Shop Now</button> </Link>
           </div>
 
           <img
@@ -34,7 +35,7 @@ function Banner() {
           <div className="banner-content">
             <span className="sale">20% Off</span>
             <h4>Sustainable Fashion</h4>
-            <a href="#">Shop Collection →</a>
+            <Link to="/products">Shop Collection →</Link>
           </div>
 
           <img
@@ -49,7 +50,7 @@ function Banner() {
           <div className="banner-content">
             <span className="sale">15% Off</span>
             <h4>Leather Products</h4>
-            <a href="#">Shop Collection →</a>
+            <Link to="/products">Shop Collection →</Link>
           </div>
 
           <img
