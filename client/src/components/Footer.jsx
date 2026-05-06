@@ -13,8 +13,8 @@ function Footer() {
               <div className="footer-brand">
                 <img src="images/logo.png" alt="logo" className="mb-4" />
                 <p className="footer-desc">
-                  Fresh groceries and quality products delivered at your
-                  doorstep. Shop smarter with Foodmart.
+                    Nice clothes and quality products delivered at your
+                  doorstep. Shop smarter with Thriftify.
                 </p>
 
                 <div className="social-links mt-4">
@@ -83,7 +83,7 @@ function Footer() {
             <div className="col-lg-2 col-md-6 col-6">
               <h6 className="footer-title">Explore</h6>
               <ul className="footer-links list-unstyled">
-                <li><a href="#">Groceries</a></li>
+                <li><a href="#">Clothes</a></li>
                 <li><a href="#">Offers</a></li>
                 <li><a href="#">Best Sellers</a></li>
               </ul>
@@ -98,7 +98,7 @@ function Footer() {
         <div className="container-fluid">
           <div className="row align-items-center">
             <div className="col-md-6">
-              <p className="mb-0">© 2026 Foodmart. All rights reserved.</p>
+              <p className="mb-0">© 2026 Thriftify. All rights reserved.</p>
             </div>
             <div className="col-md-6 text-md-end">
               <p className="mb-0">Designed by Adii with ❤️</p>

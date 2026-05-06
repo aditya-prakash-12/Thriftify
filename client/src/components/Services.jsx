@@ -26,7 +26,7 @@ function Services() {
               <div className="card-body p-0">
                 <h5>Free delivery</h5>
                 <p className="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipi elit.
+                  Get free delivery on all orders at your doorsteps.
                 </p>
               </div>
             </div>
@@ -53,7 +53,7 @@ function Services() {
               <div className="card-body p-0">
                 <h5>100% secure payment</h5>
                 <p className="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipi elit.
+                  We provide secure and reliable payment through COD.
                 </p>
               </div>
             </div>
@@ -80,7 +80,7 @@ function Services() {
               <div className="card-body p-0">
                 <h5>Quality guarantee</h5>
                 <p className="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipi elit.
+                  Only authorised sellers are allowed to list their products.
                 </p>
               </div>
             </div>
@@ -107,7 +107,7 @@ function Services() {
               <div className="card-body p-0">
                 <h5>guaranteed savings</h5>
                 <p className="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipi elit.
+                  Save much by reusing the old used clothes.
                 </p>
               </div>
             </div>
@@ -134,7 +134,7 @@ function Services() {
               <div className="card-body p-0">
                 <h5>Daily offers</h5>
                 <p className="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipi elit.
+                 Daily basis offers on products to allow users to shop more.
                 </p>
               </div>
             </div>

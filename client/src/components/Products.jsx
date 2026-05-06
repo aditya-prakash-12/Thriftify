@@ -209,12 +209,12 @@ function Products() {
                 {/* Action Buttons */}
                 <div style={{ padding: "0 18px 18px", display: "flex", flexDirection: "column", gap: "10px" }}>
                   {/* Quantity Selector */}
-                  <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "10px" }}>
+                  {/* <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "10px" }}>
                     <span style={{ fontSize: "0.9rem", fontWeight: "600", color: "#666" }}>Qty:</span>
                     <input
                       type="number"
                       min="1"
-                      max="10"
+                      max="1"
                       value={selectedQuantity[product._id] || 1}
                       onChange={(e) => setSelectedQuantity({...selectedQuantity, [product._id]: parseInt(e.target.value) || 1})}
                       style={{
@@ -226,7 +226,7 @@ function Products() {
                         fontSize: "0.95rem"
                       }}
                     />
-                  </div>
+                  </div> */}
 
                   {/* Buttons */}
                   <div style={{ display: "flex", gap: "8px" }}>

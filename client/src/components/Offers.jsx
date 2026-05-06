@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Offers() {
   return (
@@ -17,18 +18,18 @@ function Offers() {
                       <div className="categories text-primary fs-5 fw-bold">
                         Upto 25% Off
                       </div>
-                      <h3 className="banner-title">Luxa Dark Chocolate</h3>
-                      <p>Very tasty & creamy vanilla flavour creamy muffins.</p>
-                      <a href="#" className="btn btn-dark text-uppercase">
+                      <h3 className="banner-title">Men Clothes</h3>
+                      <p>Very stylish and new trending mens collection.</p>
+                      <Link to="/products" className="btn btn-dark text-uppercase">
                         Shop Now
-                      </a>
+                      </Link>
                     </div>
                   </div>
 
                   <div className="col-5 text-end">
                     <img
-                      src="images/ad-image-3.png"
-                      alt="Chocolate"
+                      src="/images/ad-image-1.png"
+                      alt="Men Clothes"
                       className="offer-img"
                     />
                   </div>
@@ -47,18 +48,18 @@ function Offers() {
                       <div className="categories text-primary fs-5 fw-bold">
                         Upto 25% Off
                       </div>
-                      <h3 className="banner-title">Creamy Muffins</h3>
-                      <p>Very tasty & creamy vanilla flavour creamy muffins.</p>
-                      <a href="#" className="btn btn-dark text-uppercase">
+                      <h3 className="banner-title">Women Clothes</h3>
+                      <p>Get trending and stylish women clothes at your doorsteps.</p>
+                      <Link tp="/products" className="btn btn-dark text-uppercase">
                         Shop Now
-                      </a>
+                      </Link>
                     </div>
                   </div>
 
                   <div className="col-5 text-end">
                     <img
-                      src="images/ad-image-4.png"
-                      alt="Muffins"
+                      src="/images/product-thumb-1.png"
+                      alt="Women clothes"
                       className="offer-img"
                     />
                   </div>
