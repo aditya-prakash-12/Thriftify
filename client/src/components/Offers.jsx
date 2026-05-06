@@ -58,7 +58,7 @@ function Offers() {
 
                   <div className="col-5 text-end">
                     <img
-                      src="/images/product-thumb-1.png"
+                      src="/images/ad-image-2.png"
                       alt="Women clothes"
                       className="offer-img"
                     />
